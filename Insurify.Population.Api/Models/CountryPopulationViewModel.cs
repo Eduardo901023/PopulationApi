@@ -5,7 +5,7 @@ namespace Insurify.Population.Api.Models
     {
         public Guid CountryId { get; set; }
         public CountryViewModel Country { get; set; }
-        public int Value { get; set; }
+        public long Value { get; set; }
         public int Year { get; set; }
     }
 }

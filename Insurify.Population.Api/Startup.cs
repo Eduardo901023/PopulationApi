@@ -17,6 +17,7 @@ using Insurify.Population.DataAccess.Repository;
 using Insurify.Population.DataAccess.Implementation.Repository;
 using Insurify.Population.Business.Contracts.ApplicationServices;
 using Insurify.Population.Business.Implementation.ApplicationServices;
+using Insurify.Population.Api.AppStart;
 
 namespace Insurify.Population.Api
 {
@@ -41,6 +42,8 @@ namespace Insurify.Population.Api
 
             services.AddTransient<ICountryApplicationService, CountryApplicationService>();
             services.AddTransient<ICountryPopulationApplicationService, CountryPopulationApplicationService>();
+
+            AutoMapperConfig.CreateMappings();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
