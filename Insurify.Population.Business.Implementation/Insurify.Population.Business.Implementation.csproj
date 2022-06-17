@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ApplicationServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApplicationServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Insurify.Population.Business\Insurify.Population.Business.csproj" />
+    <ProjectReference Include="..\Insurify.Population.DataAccess\Insurify.Population.DataAccess.csproj" />
+  </ItemGroup>
+</Project>
