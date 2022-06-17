@@ -39,7 +39,7 @@ namespace Insurify.Population.DataAccess.Implementation.DbContext
                     countries[countries.Count - 1].Code = population.CountryCode;
                     populations.Add(new CountryPopulation() {
                         CountryId = countries[countries.Count - 1].Id,
-                        Value = (int)population.Value,
+                        Value = population.Value,
                         Year = population.Year
                     });
                 }
